@@ -18,13 +18,11 @@ arr =[[-1, -1, 0, -9, -2, -2],
 sum = 0
 sums = []
 for i in range(0, 4):
-  print("new pyramid")
-
   for j in range(0, 4):
     for k in range(j, j+3):
       sum += arr[i][k] + arr[i+2][k]
 
-    sum += arr[i+1][j+1]
+    sum += arr[i+1][j+1] #adding the center of the hour glass
     print("sum: ", sum)
     sums.append(sum)
     sum = 0
